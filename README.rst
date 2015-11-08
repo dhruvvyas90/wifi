@@ -18,16 +18,13 @@ The documentation for wifi lives at https://wifi.readthedocs.org/en/latest/.
 
 Quick guide for installing it on Rpi
 
-//downloading and installing
+**Downloading and installing**
 
-`git clone -b rpi-branch https://github.com/dhruvvyas90/wifi`
+    git clone -b rpi-branch https://github.com/dhruvvyas90/wifi
+    cd wifi
+    sudo python setup.py install`
 
-`cd wifi`
+**cleaning up**
 
-`sudo python setup.py install`
-
-//cleaning up
-
-`cd ..`
-
-`sudo rm -r ./wifi/`
+    cd ..
+    sudo rm -r ./wifi/

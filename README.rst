@@ -15,3 +15,13 @@ wifi command is also implemented as a library that can be used from Python.
    :target: https://travis-ci.org/rockymeza/wifi
 
 The documentation for wifi lives at https://wifi.readthedocs.org/en/latest/.
+
+Quick guide for installing it on Rpi
+
+//downloading and installing
+`git clone -b rpi-branch https://github.com/dhruvvyas90/wifi`
+`cd wifi`
+`sudo python setup.py install`
+//cleaning up
+`cd ..`
+`sudo rm -r ./wifi/`

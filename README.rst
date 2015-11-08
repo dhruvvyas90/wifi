@@ -20,11 +20,11 @@ Quick guide for installing it on Rpi
 
 **Downloading and installing**
 
-    git clone -b rpi-branch https://github.com/dhruvvyas90/wifi
-    cd wifi
-    sudo python setup.py install`
+    # git clone -b rpi-branch https://github.com/dhruvvyas90/wifi
+    # cd wifi
+    # sudo python setup.py install`
 
 **cleaning up**
 
-    cd ..
-    sudo rm -r ./wifi/
+    # cd ..
+    # sudo rm -r ./wifi/

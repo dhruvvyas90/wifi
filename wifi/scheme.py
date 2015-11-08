@@ -87,7 +87,7 @@ class Scheme(object):
         Returns the representation of a scheme that you would need
         in the /etc/network/interfaces file.
         """
-        iface = "iface {interface}-{name} inet dhcp".format(**vars(self))
+        iface = "iface {interface} inet dhcp".format(**vars(self))
         options = ''.join("\n    {k} {v}".format(k=k, v=v) for k, v in self.options.items())
         return iface + options + '\n'
 
@@ -162,7 +162,7 @@ class Scheme(object):
         args = list(itertools.chain.from_iterable(
             ('-o', '{k}={v}'.format(k=k, v=v)) for k, v in self.options.items()))
 
-        return [self.interface + '=' + self.iface] + args
+        return [self.interface]
 
     def activate(self):
         """

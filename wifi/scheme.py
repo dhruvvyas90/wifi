@@ -16,7 +16,7 @@ def configuration(cell, passkey=None):
     if not cell.encrypted:
         return {
             'wireless-essid': cell.ssid,
-            'wireless-channel': 'auto',
+            #'wireless-channel': 'auto',
         }
     else:
         if cell.encryption_type.startswith('wpa'):
@@ -26,7 +26,7 @@ def configuration(cell, passkey=None):
             return {
                 'wpa-ssid': cell.ssid,
                 'wpa-psk': passkey,
-                'wireless-channel': 'auto',
+                #'wireless-channel': 'auto',
             }
         elif cell.encryption_type == 'wep':
             # Pass key lengths in bytes for WEP depend on type of key and key length:
